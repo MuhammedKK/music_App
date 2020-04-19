@@ -1,0 +1,71 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.app {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading {
+    font-size:60px;
+    margin:50px 0 
+}
+
+.visuals > div {
+    position: absolute;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    bottom: 0;
+    z-index:-1  
+}
+
+.taps {
+    background-color:#000;
+    width:100%;
+    display: flex;
+}
+.taps > div {
+    width:200px;
+    height:200px;
+    flex:1;
+    cursor:pointer
+}
+.taps > div.tap1 {
+    background-color:#090;
+}
+.taps > div.tap2 {
+    background-color:#f00;
+}
+.taps > div.tap3 {
+    background-color:#00f;
+}
+.taps > div.tap4 {
+    background-color:#f0f;
+}
+.taps > div.tap5 {
+    background-color:#ff0;
+}
+.taps > div.tap6 {
+    background-color:#0ff;
+}
+
+@keyframes jump {
+    0% {
+        bottom : 0;
+        left: 20%;
+    }
+    50% {
+        bottom:50%;
+        left:50%;
+    }
+    100% {
+        bottom:0%;
+        left: 80%;
+    }
+}
